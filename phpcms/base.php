@@ -47,6 +47,8 @@ define('JS_PATH',pc_base::load_config('system','js_path'));
 define('CSS_PATH',pc_base::load_config('system','css_path'));
 //img 路径
 define('IMG_PATH',pc_base::load_config('system','img_path'));
+//bs 路径
+define('BS_PATH',pc_base::load_config('system','bs_path'));
 //动态程序路径
 define('APP_PATH',pc_base::load_config('system','app_path'));
 

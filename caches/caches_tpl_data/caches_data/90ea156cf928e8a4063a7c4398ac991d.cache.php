@@ -1,0 +1,37 @@
+<?php
+return array (
+  1 => 
+  array (
+    'id' => '1',
+    'catid' => '7',
+    'typeid' => '0',
+    'title' => '微信支付',
+    'style' => '',
+    'thumb' => '',
+    'keywords' => '',
+    'description' => '微信',
+    'posids' => '1',
+    'url' => 'http://www.phpcms.com/index.php?m=content&c=index&a=show&catid=7&id=1',
+    'listorder' => '0',
+    'status' => '99',
+    'sysadd' => '1',
+    'islink' => '0',
+    'username' => 'phpcms',
+    'inputtime' => '1562487213',
+    'updatetime' => '1562487364',
+    'systems' => 'Win2000/WinXP/Win2003',
+    'copytype' => '免费版',
+    'language' => '英文',
+    'classtype' => '国产软件',
+    'version' => '',
+    'filesize' => '未知',
+    'stars' => '★★★★☆',
+    'hitsid' => 'c-2-1',
+    'views' => '2',
+    'yesterdayviews' => '0',
+    'dayviews' => '2',
+    'weekviews' => '2',
+    'monthviews' => '2',
+  ),
+);
+?>

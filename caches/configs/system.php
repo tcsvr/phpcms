@@ -17,7 +17,7 @@ return array(
 'tpl_name' => 'default', //当前模板方案目录
 'tpl_css' => 'default', //当前样式目录
 'tpl_referesh' => 1,
-'tpl_edit'=> 0,//是否允许在线编辑模板
+'tpl_edit'=> 1,//是否允许在线编辑模板
 
 //附件相关配置
 'upload_path' => PHPCMS_PATH.'uploadfile/',
@@ -28,6 +28,7 @@ return array(
 'css_path' => 'http://www.phpcms.com/statics/css/', //CDN CSS
 'img_path' => 'http://www.phpcms.com/statics/images/', //CDN img
 'app_path' => 'http://www.phpcms.com/',//动态域名配置地址
+'bs_path' => 'http://www.phpcms.com/statics/bs/',//动态 bs 配置地址
 
 'charset' => 'utf-8', //网站字符集
 'timezone' => 'Etc/GMT-8', //网站时区（只对php 5.1以上版本有效），Etc/GMT-8 实际表示的是 GMT+8

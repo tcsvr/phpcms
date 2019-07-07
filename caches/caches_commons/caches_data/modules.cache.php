@@ -492,5 +492,19 @@ return array (
     'installdate' => '2011-09-02',
     'updatedate' => '2011-09-02',
   ),
+  'user' => 
+  array (
+    'module' => 'user',
+    'name' => '用户',
+    'url' => '',
+    'iscore' => '0',
+    'version' => '1.0',
+    'description' => '用户信息管理',
+    'setting' => '',
+    'listorder' => '0',
+    'disabled' => '0',
+    'installdate' => '0000-00-00',
+    'updatedate' => '0000-00-00',
+  ),
 );
 ?>

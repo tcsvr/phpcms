@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>首页</title>
+    <link rel="stylesheet" href="<?php echo BS_PATH ?>css/bootstrap.min.css">
+    <script src="<?php echo BS_PATH ?>js/jquery.min.js"></script>
+    <script src="<?php echo BS_PATH ?>js/bootstrap.min.js"></script>
+    <style>
+        .navbar-header a img {
+            position: relative;
+            top: -15px;
+            border-radius: 25px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <!-- 导航条开始 -->
+        <nav class="navbar navbar-default">
+            <div class="container-fluid">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                        data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#"><img style="max-height: 50px" src="{IMG_PATH}logo.jpg" alt=""></a>
+                </div>
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
+                        {pc:content action="category" siteid="1"}
+                        {loop $data $row}
+                        <li><a href="{$row[url]}">{$row[catname]}</a></li>
+                        {/loop}
+                        {/pc}
+                    </ul>
+                    <form class="navbar-form navbar-left">
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Search">
+                        </div>
+                        <button type="submit" class="btn btn-default">搜索</button>
+                    </form>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="#">联系我们</a></li>
+                        </li>
+                    </ul>
+                </div><!-- /.navbar-collapse -->
+            </div><!-- /.container-fluid -->
+        </nav>
+        <!-- 导航条结束 -->
+
+        {pc:content action="category" siteid="1"}
+        {loop $data $row}
+        <div class="list-group">
+            <a href="#" class="list-group-item active">
+                {$row[catname]}
+            </a>
+            {pc:content action="lists" catid="$row[catid]" num="5" order="id DESC"}
+            {loop $data $art}
+            <a href="{$art[url]}" class="list-group-item">{$art[title]}</a>
+            {/loop}
+            {/pc}
+        </div>
+        {/loop}
+        {/pc}
+
+    </div>
+</body>
+
+</html>
